@@ -254,3 +254,99 @@ span {
 .fade.show {
   opacity: 1;
 }
+/* Modal ẩn mặc định */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Nội dung form */
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.modal-content label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.modal-content button {
+  margin-top: 15px;
+  width: 100%;
+}
+
+/* Nút đóng */
+.close {
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* Contact form */
+#contact-form {
+  text-align: left;
+}
+
+#contact-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333; /* màu chữ tối, dễ đọc trên nền trắng */
+  margin: 10px 0 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: #ff4d4d;
+  outline: none;
+}
